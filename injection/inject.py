@@ -99,8 +99,8 @@ def convert_esco_occupations_to_json():
     :return None
     """
     
-    esco_csv_path = 'ESCO/occupations_en.csv'
-    esco_json_path = 'ESCO/occupations.json'
+    esco_csv_path = 'data/ESCO/occupations_en.csv'
+    esco_json_path = 'data/ESCO/occupations.json'
 
     esco_data = pd.read_csv(esco_csv_path)
     esco_data['occupation_id'] = esco_data.index.tolist()
@@ -113,34 +113,34 @@ def convert_esco_occupations_to_json():
     
 
 def convert_esco_rels_to_json():
-    esco_rel = pd.read_csv('ESCO/occupations to skills.csv')
+    esco_rel = pd.read_csv('data/ESCO/occupations to skills.csv')
     esco_rel.columns = ['occupationURI', 'skillURI']
 
     esco_transformed = dict()
     esco_transformed['occupations_skills'] = esco_rel.to_dict('records')
 
-    injection_esco_file = 'ESCO/esco_rels.json'
+    injection_esco_file = 'data/ESCO/esco_rels.json'
     with open(injection_esco_file, 'w+') as f:
                 json.dump(esco_transformed, f)
 
 
 def combine_esco():
-    injection_occ_file = 'ESCO/esco_occupations.json'
+    injection_occ_file = 'data/ESCO/esco_occupations.json'
     with open(injection_occ_file, 'r', encoding='utf-8') as file:
             data: dict = json.load(file)
     
-    injection_skill_file = 'ESCO/esco_skills.json'
+    injection_skill_file = 'data/ESCO/esco_skills.json'
     with open(injection_skill_file, 'r', encoding='utf-8') as file:
             skill_data: dict = json.load(file)
     
-    injection_rel_file = 'ESCO/esco_rels.json'
+    injection_rel_file = 'data/ESCO/esco_rels.json'
     with open(injection_rel_file, 'r', encoding='utf-8') as file:
             rel_data: dict = json.load(file)
     
     skill_data['esco_occupations'] = data['esco_occupations']
     skill_data['occupations_skills'] = rel_data['occupations_skills']
 
-    injection_esco_file = 'ESCO/occupations_skills.json'
+    injection_esco_file = 'data/ESCO/occupations_skills.json'
     with open(injection_esco_file, 'w+') as f:
                 json.dump(skill_data, f)
 
