@@ -1,0 +1,4 @@
+CREATE FULLTEXT INDEX profilesIndex IF NOT EXISTS
+FOR (n:EXPERIENCE|EDUCATION) 
+ON EACH [n.classification, n.employer_details,n.experience_type,n.duties, n.subject, n.education_type] 
+OPTIONS {indexConfig:{`fulltext.eventually_consistent`: true}}
