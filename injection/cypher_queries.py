@@ -16,10 +16,22 @@ injections = {
             })
         MERGE (prof)-[:HAS_EXPERIENCE]->(experience)
 
-        MERGE (experience_type:EXPERIENCE_TYPE {experience_type:exp.experience_type})
+        MERGE (experience_description:EXPERIENCE_DESCRIPTION {experience_description:exp.experience_description})
+        MERGE (experience)-[:HAS_DESCRIPTION]->(experience_description)
+
+        MERGE (experience_type:EXPERIENCE_TYPE {experience_type:exp.Category})
         MERGE (experience)-[:IS_OF_TYPE]->(experience_type)
     """
 }
+"""
+FOREACH (
+            _ IN CASE WHEN exp.experience_type IS NOT NULL THEN [1] ELSE [] END |
+            SET experience.experience_type = exp.Category
+            MERGE (experience_type:EXPERIENCE_TYPE {experience_type:exp.Category})
+            MERGE (experience)-[:IS_OF_TYPE]->(experience_type)
+        )
+"""
+
 
 esco_injection = {
     'esco_skills': """
@@ -54,7 +66,7 @@ esco_injection = {
 skills_injection = {
     'skills': """
         UNWIND $skills as skl
-        MATCH (profile:PROFILE {frm_id: skl.FRM_ID}), (skill:SKILL {skill_id: skl.SKILL_ID})
+        MATCH (profile:PROFILE {ID: skl.ID}), (skill:SKILL {skill_id: skl.SKILL_ID})
         MERGE (profile)-[r:HAS_SKILL]->(skill)
         SET r.weight = skl.WEIGHT
     """

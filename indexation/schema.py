@@ -1,5 +1,7 @@
 indexes = {
-    'EXPERIENCE': [('ID', 'experience_description', 'experience_type')],
+    'EXPERIENCE': [('ID', 'experience_type')],
+    'EXPERIENCE_TYPE': [('experience_type',)],
+    # 'EXPERIENCE_DESCRIPTION': [('experience_description',)],
     'PROFILE': [('ID',)],
     'SKILL': [
         ('skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description'),

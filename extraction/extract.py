@@ -18,14 +18,14 @@ logging.basicConfig(
 
 
 def get_experience_descriptions(text_html):
-    soup = BeautifulSoup(text_html, "html-parser")
+    soup = BeautifulSoup(text_html, "html.parser")
 
     experiences_list = soup.find_all('span', class_='jobline')
     # print(experiences_list)
     if experiences_list:
         # print(True)
         experiences_list = [item.text.strip() for item in experiences_list ]
-        experiences_list = [unicodedata.normalize("NFKD", item) for item in experiences_list if len(item)>10]
+        experiences_list = [str(unicodedata.normalize("NFKD", item)) for item in experiences_list if len(item)>10]
     
     return experiences_list
 
@@ -34,6 +34,8 @@ def extract_experiences(df):
     df['experience_description'] = df['Resume_html'].apply(get_experience_descriptions)
     df = df.explode('experience_description')
     df.drop(['Resume_str', 'Resume_html'], axis=1, inplace=True)
+    df.dropna(inplace=True)
+
     return df
 
 

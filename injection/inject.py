@@ -1,7 +1,7 @@
 import json
 from py2neo import Graph
 from tools.dotenv_read import read_dotenv
-from injection.cypher_queries import injections, full_injection, esco_injection, skills_injection
+from injection.cypher_queries import injections, esco_injection, skills_injection
 from tqdm import tqdm
 from math import ceil
 import logging
@@ -12,12 +12,12 @@ This script injects json files as created by extraction.extract in a Neo4J graph
 Configuration of .env file is necessary, see README.md
 """
 
-logging.basicConfig(
-    filename='../injection.log',
-    filemode='w+',
-    level=logging.DEBUG,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
+# logging.basicConfig(
+#     filename='../injection.log',
+#     filemode='w+',
+#     level=logging.DEBUG,
+#     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+# )
 
 
 def inject_experience_education(graph: Graph, path_to_json: str, batch_size: int = 1000, injections = injections):
@@ -36,7 +36,7 @@ def inject_experience_education(graph: Graph, path_to_json: str, batch_size: int
 
         for k in data.keys():
 
-            logging.info(f'Injecting {k}...')
+            # logging.info(f'Injecting {k}...')
             statement = injections[k]
             node_data = data[k]
 
@@ -46,30 +46,8 @@ def inject_experience_education(graph: Graph, path_to_json: str, batch_size: int
                 tx.run(statement, {k: node_data[b * batch_size:(b + 1) * batch_size]})
 
     except Exception as exc:
-        logging.error(exc)
+        raise exc
 
-
-def inject_profiles(graph: Graph, path_to_json: str, batch_size: int = 200):
-    """
-    Script for injecting json in Neo4J. Requires a :class:`py2neo.Graph` object to operate. The json must contain a
-    dictionary following precise specifications, such as the ones created by analyse_sample.create_grouped_summary.
-    :param graph: a Graph object.
-    :param path_to_json: Path to a json file containing the nodes data.
-    :param batch_size: Number of statements to process at once, defaults to 200.
-    :return: None
-    """
-    with open(path_to_json, 'r', encoding='utf-8') as file:
-        data: dict = json.load(file)
-
-    try:
-
-        n_batches = ceil(len(data) / batch_size)
-        for b in tqdm(range(n_batches)):
-            tx = graph.auto()
-            tx.run(full_injection, {'data': data[b * batch_size:(b + 1) * batch_size]})
-
-    except Exception as exc:
-        logging.error(exc)
 
 
 def convert_esco_to_json():
