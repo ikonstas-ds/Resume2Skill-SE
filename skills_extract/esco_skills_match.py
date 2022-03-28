@@ -28,11 +28,13 @@ class SkillExtractor():
         # Load ESCO skills file
         self.esco_data = pd.read_csv(esco_data_path)
         self.skills_list = self.esco_data.description.values.tolist()
+        skill_labels_list = self.esco_data.preferredLabel.values.tolist()
+        self.skills_list = [self.skills_list[i]+".\n"+skill_labels_list[i] for i in range(self.esco_data.shape[0])]
 
         #Create embedding index
         esco_embeddings_path = 'data/ESCO/esco_embedddings.npy'
         if not os.path.exists(esco_embeddings_path):
-            self.embeddings_esco = self.model.encode(self.skills_list, convert_to_tensor=True)
+            self.embeddings_esco = self.model.encode(self.skills_list, show_progress_bar=True)
             self.emb_index = {skill: self.embeddings_esco[i] for i, skill in enumerate(self.skills_list)}
             np.save(esco_embeddings_path, self.embeddings_esco)
         else:
@@ -117,9 +119,10 @@ if __name__ == '__main__':
     data = pd.DataFrame(data['experiences'])
     # data = data.iloc[:100]
 
-    skill_extr_obj.calculate_embeddings(data)
+    if not os.path.exists('data/experiences_embedddings.npy'):
+        skill_extr_obj.calculate_embeddings(data)
 
-    skill_extr_obj.extract(data, extract_path='data/resume_skills.json')
+    skill_extr_obj.extract(data, topk=10, extract_path='data/resume_skills.json')
 
 
         

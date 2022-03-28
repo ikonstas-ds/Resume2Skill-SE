@@ -10,13 +10,14 @@ injections = {
         MERGE (prof:PROFILE {ID:exp.ID})
     
         MERGE (experience:EXPERIENCE {
-            ID:exp.ID, 
+            ID:exp.ID,
+            exp_id: exp.ind, 
             experience_description:exp.experience_description,
             experience_type:exp.Category
             })
         MERGE (prof)-[:HAS_EXPERIENCE]->(experience)
 
-        MERGE (experience_description:EXPERIENCE_DESCRIPTION {experience_description:exp.experience_description})
+        MERGE (experience_description:EXPERIENCE_DESCRIPTION {experience_description:exp.experience_description, exp_id: exp.ind})
         MERGE (experience)-[:HAS_DESCRIPTION]->(experience_description)
 
         MERGE (experience_type:EXPERIENCE_TYPE {experience_type:exp.Category})

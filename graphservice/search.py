@@ -23,7 +23,7 @@ def encode_feedback(profile_id, search_id, feedback):
     statement = """
                 Match (profile:PROFILE)
                 Match (search:BotQuestion)
-                where id(search)=$search_id and profile.frm_id=$profile_id
+                where id(search)=$search_id and profile.ID=$profile_id
                 merge (profile)-[r:ANSWERS { feedback: $feedback }]->(search)
                 """
 
@@ -91,12 +91,9 @@ def search_similar_profiles(**kwargs):
     Output:
     List of dictionaries in the form:
     [
-    'profile':{'cnd_id':"<int>", 'app_id':"<int>", 'frm_id':"<int>"},
-    'education':[{'subject':"<str>", 'education_category':"<str>", 'education_type':"<str>",
-                'cnd_id':<int>", 'app_id':"<int>", 'frm_id':"<int>"}, ...],
-    'experience':[{'experience_type':"<str>", 'employer_details':"<str>", classification:"<str>",
-                'managerial_position':"<str>", 'duties':"<str>",
-                'cnd_id':<int>", 'app_id':"<int>", 'frm_id':"<int>"}, ...],
+    'profile':{'ID':"<int>"},
+    'experience':[{'experience_type':"<str>", 'experience_description':"<str>",
+                'ID':"<int>"}, ...],
     'simScore':"<float>", skillLabels:["<str>",...]
     ]
     """
@@ -128,9 +125,8 @@ def search_similar_profiles(**kwargs):
     }
     WITH target, simScore, skillLabels
     MATCH (target)-[r2]-(experience:EXPERIENCE)
-    MATCH (target)-[r3]-(education:EDUCATION)
     WITH {profile:target , experience: collect(distinct (experience)),
-            education: collect(distinct (education)), simScore:simScore, skillLabels: skillLabels} AS userData      
+            simScore:simScore, skillLabels: skillLabels} AS userData      
     RETURN userData
     """
     
@@ -166,7 +162,6 @@ def search_full_text(**kwargs):
                                     with collect(distinct profile) as profiles
                                     unwind profiles[..$limit] as profile
                                     match (profile)-[r2]-(experience:EXPERIENCE)
-                                    match (profile)-[r3]-(education:EDUCATION)
                                     WITH {profile:profile, experience: collect(distinct (experience)), education: collect(distinct (education))} AS userData 
                                     RETURN userData
 
@@ -298,23 +293,22 @@ def search_full_text(**kwargs):
     return search_id, profiles, filters, cetntrality_filters, outliers
 
 
-def query_profile_info(frm_ids):
+def query_profile_info(IDs):
     
-    frm_ids = [int(item) for item in frm_ids]
+    IDs = [int(item) for item in IDs]
     
     statement = """
-    UNWIND $frm_ids as prof_id
-    MATCH (profile:PROFILE {frm_id:prof_id})
+    UNWIND $IDs as prof_id
+    MATCH (profile:PROFILE {ID:prof_id})
     MATCH (profile)-[r2]-(experience:EXPERIENCE)
-    MATCH (profile)-[r3]-(education:EDUCATION)
     WITH {profile:profile , experience: collect(distinct (experience)),
-            education: collect(distinct (education)), skillLabels: collect(distinct (skill.preferredLabel))} AS userData      
+            skillLabels: collect(distinct (skill.preferredLabel))} AS userData      
     RETURN userData
     """
     
     tx = neoconnection.graph.auto(readonly=True)
         
-    params = {'frm_ids': frm_ids}
+    params = {'IDs': IDs}
     
     new_node = tx.run(statement, params)
     # new_node.to_data_frame().head(3)

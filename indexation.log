@@ -1,771 +1,784 @@
-2022-03-21 03:19:22,149 - py2neo.client - DEBUG - Adding connection pool for profile ConnectionProfile('http://localhost:7474')
-2022-03-21 03:19:22,149 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:22,308 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7474
-2022-03-21 03:19:24,345 - urllib3.connectionpool - DEBUG - http://localhost:7474 "GET / HTTP/1.1" 200 278
-2022-03-21 03:19:24,353 - urllib3.connectionpool - DEBUG - http://localhost:7474 "GET /db/data/ HTTP/1.1" 404 0
-2022-03-21 03:19:24,369 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,369 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,383 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,383 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,383 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,383 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,383 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:24,617 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 677
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,617 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,617 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,617 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,617 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,617 - root - INFO - Index ('ID', 'experience_type') is missing on EXPERIENCE. Creating index.
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,617 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:24,617 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 146
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,617 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,617 - py2neo.client.http - DEBUG - POST '/db/data/transaction/2' 'CREATE INDEX ON :EXPERIENCE(ID, experience_type)' {}
-2022-03-21 03:19:24,685 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/2 HTTP/1.1" 200 865
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,685 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,685 - py2neo.client.http - DEBUG - POST '/db/data/transaction/2/commit' None None
-2022-03-21 03:19:24,784 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/2/commit HTTP/1.1" 200 88
-2022-03-21 03:19:24,790 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,791 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,791 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,791 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,791 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,791 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:24,890 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 808
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,890 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,890 - root - INFO - Index ('ID', 'experience_type') created on EXPERIENCE.
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,890 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,890 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:24,908 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 808
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,908 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:24,908 - root - INFO - Index ('experience_type',) is missing on EXPERIENCE_TYPE. Creating index.
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,908 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,908 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:24,924 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 146
-2022-03-21 03:19:24,924 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,924 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,924 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,924 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,924 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,924 - py2neo.client.http - DEBUG - POST '/db/data/transaction/5' 'CREATE INDEX ON :EXPERIENCE_TYPE(experience_type)' {}
-2022-03-21 03:19:24,953 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/5 HTTP/1.1" 200 865
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,953 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,953 - py2neo.client.http - DEBUG - POST '/db/data/transaction/5/commit' None None
-2022-03-21 03:19:24,990 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/5/commit HTTP/1.1" 200 88
-2022-03-21 03:19:24,990 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,990 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:24,990 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,990 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:24,990 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:24,990 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,058 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 939
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,058 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,058 - root - INFO - Index ('experience_type',) created on EXPERIENCE_TYPE.
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,058 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,058 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,074 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 939
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,074 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,074 - root - INFO - Index ('ID',) is missing on PROFILE. Creating index.
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,074 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:25,074 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 146
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,074 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,074 - py2neo.client.http - DEBUG - POST '/db/data/transaction/8' 'CREATE INDEX ON :PROFILE(ID)' {}
-2022-03-21 03:19:25,090 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/8 HTTP/1.1" 200 865
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,090 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,090 - py2neo.client.http - DEBUG - POST '/db/data/transaction/8/commit' None None
-2022-03-21 03:19:25,162 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/8/commit HTTP/1.1" 200 88
-2022-03-21 03:19:25,162 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,162 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,162 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,162 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,162 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,162 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,290 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1049
-2022-03-21 03:19:25,290 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,290 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,290 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,290 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,290 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,290 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,290 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,290 - root - INFO - Index ('ID',) created on PROFILE.
-2022-03-21 03:19:25,298 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,298 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,298 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,298 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,298 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,308 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1049
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,308 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,308 - root - INFO - Index ('skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description') is missing on SKILL. Creating index.
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,308 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,308 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:25,326 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
-2022-03-21 03:19:25,326 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,326 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,326 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,326 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,326 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,326 - py2neo.client.http - DEBUG - POST '/db/data/transaction/11' 'CREATE INDEX ON :SKILL(skill_id, conceptUri, reuseLevel, skillType, preferred_label, description)' {}
-2022-03-21 03:19:25,357 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/11 HTTP/1.1" 200 866
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,357 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,357 - py2neo.client.http - DEBUG - POST '/db/data/transaction/11/commit' None None
-2022-03-21 03:19:25,429 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/11/commit HTTP/1.1" 200 89
-2022-03-21 03:19:25,429 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,429 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,429 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,429 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,429 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,429 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,490 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1232
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,490 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,490 - root - INFO - Index ('skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description') created on SKILL.
-2022-03-21 03:19:25,490 - root - INFO - Index ('skill_id',) is missing on SKILL. Creating index.
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,490 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:25,490 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,490 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,490 - py2neo.client.http - DEBUG - POST '/db/data/transaction/13' 'CREATE INDEX ON :SKILL(skill_id)' {}
-2022-03-21 03:19:25,507 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/13 HTTP/1.1" 200 866
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,507 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,507 - py2neo.client.http - DEBUG - POST '/db/data/transaction/13/commit' None None
-2022-03-21 03:19:25,590 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/13/commit HTTP/1.1" 200 89
-2022-03-21 03:19:25,590 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,590 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,590 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,590 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,590 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,590 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,653 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1346
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,653 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,653 - root - INFO - Index ('skill_id',) created on SKILL.
-2022-03-21 03:19:25,653 - root - INFO - Index ('conceptUri',) is missing on SKILL. Creating index.
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,653 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,653 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:25,657 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
-2022-03-21 03:19:25,657 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,657 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,657 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,657 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,657 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,657 - py2neo.client.http - DEBUG - POST '/db/data/transaction/15' 'CREATE INDEX ON :SKILL(conceptUri)' {}
-2022-03-21 03:19:25,674 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/15 HTTP/1.1" 200 866
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,674 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,674 - py2neo.client.http - DEBUG - POST '/db/data/transaction/15/commit' None None
-2022-03-21 03:19:25,753 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/15/commit HTTP/1.1" 200 89
-2022-03-21 03:19:25,753 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,753 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,753 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,753 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,753 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,753 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,823 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1462
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,823 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,823 - root - INFO - Index ('conceptUri',) created on SKILL.
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,823 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,823 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,840 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1462
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,840 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:25,840 - root - INFO - Index ('occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description') is missing on OCCUPATION. Creating index.
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,840 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,840 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:25,840 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
-2022-03-21 03:19:25,853 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,853 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,853 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,853 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,853 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,853 - py2neo.client.http - DEBUG - POST '/db/data/transaction/18' 'CREATE INDEX ON :OCCUPATION(occupation_id, conceptUri, iscoGroup, preferredLabel, description)' {}
-2022-03-21 03:19:25,873 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/18 HTTP/1.1" 200 866
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,873 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,873 - py2neo.client.http - DEBUG - POST '/db/data/transaction/18/commit' None None
-2022-03-21 03:19:25,963 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/18/commit HTTP/1.1" 200 89
-2022-03-21 03:19:25,963 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,963 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,963 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,963 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,963 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,963 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:25,990 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1641
-2022-03-21 03:19:25,990 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,990 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:25,990 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,990 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:25,990 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,990 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description']
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:25,990 - py2neo.client.json - DEBUG - Hydrating object 'iscoGroup'
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object 'preferredLabel'
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,006 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,007 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,007 - root - INFO - Index ('occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description') created on OCCUPATION.
-2022-03-21 03:19:26,007 - root - INFO - Index ('occupation_id',) is missing on OCCUPATION. Creating index.
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,007 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:26,007 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,007 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,007 - py2neo.client.http - DEBUG - POST '/db/data/transaction/20' 'CREATE INDEX ON :OCCUPATION(occupation_id)' {}
-2022-03-21 03:19:26,023 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/20 HTTP/1.1" 200 866
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,023 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,023 - py2neo.client.http - DEBUG - POST '/db/data/transaction/20/commit' None None
-2022-03-21 03:19:26,131 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/20/commit HTTP/1.1" 200 89
-2022-03-21 03:19:26,131 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,131 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,131 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,131 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,131 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,131 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:26,190 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1766
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'iscoGroup'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'preferredLabel'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,190 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,190 - root - INFO - Index ('occupation_id',) created on OCCUPATION.
-2022-03-21 03:19:26,190 - root - INFO - Index ('conceptURI',) is missing on OCCUPATION. Creating index.
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,190 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,190 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
-2022-03-21 03:19:26,208 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
-2022-03-21 03:19:26,208 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,208 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,208 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,208 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,208 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,208 - py2neo.client.http - DEBUG - POST '/db/data/transaction/22' 'CREATE INDEX ON :OCCUPATION(conceptURI)' {}
-2022-03-21 03:19:26,227 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/22 HTTP/1.1" 200 866
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,227 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,227 - py2neo.client.http - DEBUG - POST '/db/data/transaction/22/commit' None None
-2022-03-21 03:19:26,318 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/22/commit HTTP/1.1" 200 89
-2022-03-21 03:19:26,318 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,318 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,318 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,318 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,318 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,318 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
-2022-03-21 03:19:26,358 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1888
-2022-03-21 03:19:26,358 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,358 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
-2022-03-21 03:19:26,358 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,358 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x000001C7C2CA4C10>
-2022-03-21 03:19:26,358 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> acquired by thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,358 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x000001C7C2D174C0> from thread <_MainThread(MainThread, started 25476)>
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'iscoGroup'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'preferredLabel'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'description'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'experience_type']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['conceptURI']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'conceptURI'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['ID']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'ID'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,358 - py2neo.client.json - DEBUG - Hydrating object []
-2022-03-21 03:19:26,358 - root - INFO - Index ('conceptURI',) created on OCCUPATION.
+2022-03-28 13:35:41,569 - py2neo.client - DEBUG - Adding connection pool for profile ConnectionProfile('http://localhost:7474')
+2022-03-28 13:35:41,589 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:41,821 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:7474
+2022-03-28 13:35:43,871 - urllib3.connectionpool - DEBUG - http://localhost:7474 "GET / HTTP/1.1" 200 278
+2022-03-28 13:35:43,882 - urllib3.connectionpool - DEBUG - http://localhost:7474 "GET /db/data/ HTTP/1.1" 404 0
+2022-03-28 13:35:43,883 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:43,883 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:43,902 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:43,902 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:43,902 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:43,902 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:43,903 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,002 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 677
+2022-03-28 13:35:44,002 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,002 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,002 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,002 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,003 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,003 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,003 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,003 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,003 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,003 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,003 - root - INFO - Index ('ID', 'exp_id', 'experience_type') is missing on EXPERIENCE. Creating index.
+2022-03-28 13:35:44,003 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,003 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,003 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,003 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,003 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:44,009 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 146
+2022-03-28 13:35:44,010 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,010 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,011 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,011 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,011 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,011 - py2neo.client.http - DEBUG - POST '/db/data/transaction/2' 'CREATE INDEX ON :EXPERIENCE(ID, exp_id, experience_type)' {}
+2022-03-28 13:35:44,058 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/2 HTTP/1.1" 200 865
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,058 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,059 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,059 - py2neo.client.http - DEBUG - POST '/db/data/transaction/2/commit' None None
+2022-03-28 13:35:44,136 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/2/commit HTTP/1.1" 200 88
+2022-03-28 13:35:44,136 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,137 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,137 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,137 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,137 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,137 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,177 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 817
+2022-03-28 13:35:44,177 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,177 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,177 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,177 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,178 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,178 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,178 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,178 - root - INFO - Index ('ID', 'exp_id', 'experience_type') created on EXPERIENCE.
+2022-03-28 13:35:44,179 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,179 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,179 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,179 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,179 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,189 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 817
+2022-03-28 13:35:44,190 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,190 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,190 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,190 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,190 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,190 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,190 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,191 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,191 - root - INFO - Index ('experience_type',) is missing on EXPERIENCE_TYPE. Creating index.
+2022-03-28 13:35:44,191 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,191 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,191 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,191 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,191 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:44,195 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 146
+2022-03-28 13:35:44,195 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,195 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,195 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,195 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,195 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,195 - py2neo.client.http - DEBUG - POST '/db/data/transaction/5' 'CREATE INDEX ON :EXPERIENCE_TYPE(experience_type)' {}
+2022-03-28 13:35:44,211 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/5 HTTP/1.1" 200 865
+2022-03-28 13:35:44,211 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,212 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,212 - py2neo.client.http - DEBUG - POST '/db/data/transaction/5/commit' None None
+2022-03-28 13:35:44,305 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/5/commit HTTP/1.1" 200 88
+2022-03-28 13:35:44,305 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,306 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,306 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,306 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,306 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,306 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,345 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 948
+2022-03-28 13:35:44,346 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,346 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,346 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,346 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,346 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,346 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,346 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,347 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,347 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,347 - root - INFO - Index ('experience_type',) created on EXPERIENCE_TYPE.
+2022-03-28 13:35:44,347 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,347 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,347 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,347 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,347 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,357 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 948
+2022-03-28 13:35:44,357 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,357 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,357 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,358 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,358 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,358 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,358 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,359 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,359 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,359 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,359 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,359 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,359 - root - INFO - Index ('ID',) is missing on PROFILE. Creating index.
+2022-03-28 13:35:44,359 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,359 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,359 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,359 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,359 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:44,366 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 146
+2022-03-28 13:35:44,366 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,366 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,366 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,366 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,367 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,367 - py2neo.client.http - DEBUG - POST '/db/data/transaction/8' 'CREATE INDEX ON :PROFILE(ID)' {}
+2022-03-28 13:35:44,379 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/8 HTTP/1.1" 200 865
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,380 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,380 - py2neo.client.http - DEBUG - POST '/db/data/transaction/8/commit' None None
+2022-03-28 13:35:44,473 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/8/commit HTTP/1.1" 200 88
+2022-03-28 13:35:44,474 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,474 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,474 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,474 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,474 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,474 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,520 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1058
+2022-03-28 13:35:44,521 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,521 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,521 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,521 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,521 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,521 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,521 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:44,522 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,523 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,523 - root - INFO - Index ('ID',) created on PROFILE.
+2022-03-28 13:35:44,524 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,524 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,524 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,524 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,524 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,536 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1058
+2022-03-28 13:35:44,536 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,536 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,536 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,536 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,536 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,536 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,536 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,537 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,537 - root - INFO - Index ('skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description') is missing on SKILL. Creating index.
+2022-03-28 13:35:44,537 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,537 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,537 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,537 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,537 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:44,543 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
+2022-03-28 13:35:44,543 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,543 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,543 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,543 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,543 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,543 - py2neo.client.http - DEBUG - POST '/db/data/transaction/11' 'CREATE INDEX ON :SKILL(skill_id, conceptUri, reuseLevel, skillType, preferred_label, description)' {}
+2022-03-28 13:35:44,573 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/11 HTTP/1.1" 200 866
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,575 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,575 - py2neo.client.http - DEBUG - POST '/db/data/transaction/11/commit' None None
+2022-03-28 13:35:44,668 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/11/commit HTTP/1.1" 200 89
+2022-03-28 13:35:44,668 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,668 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,668 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,668 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,668 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,668 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,732 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1241
+2022-03-28 13:35:44,733 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,733 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,733 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,733 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,733 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,733 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,733 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:44,734 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:44,734 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:44,734 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,735 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,736 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,736 - root - INFO - Index ('skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description') created on SKILL.
+2022-03-28 13:35:44,736 - root - INFO - Index ('skill_id',) is missing on SKILL. Creating index.
+2022-03-28 13:35:44,736 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,738 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,738 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,738 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,738 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:44,745 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
+2022-03-28 13:35:44,747 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,747 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,747 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,747 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,747 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,747 - py2neo.client.http - DEBUG - POST '/db/data/transaction/13' 'CREATE INDEX ON :SKILL(skill_id)' {}
+2022-03-28 13:35:44,764 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/13 HTTP/1.1" 200 866
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,764 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,764 - py2neo.client.http - DEBUG - POST '/db/data/transaction/13/commit' None None
+2022-03-28 13:35:44,835 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/13/commit HTTP/1.1" 200 89
+2022-03-28 13:35:44,836 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,836 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,836 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,836 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,836 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,837 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:44,882 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1355
+2022-03-28 13:35:44,882 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,883 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,883 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,883 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,883 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,883 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,883 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,884 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:44,884 - root - INFO - Index ('skill_id',) created on SKILL.
+2022-03-28 13:35:44,884 - root - INFO - Index ('conceptUri',) is missing on SKILL. Creating index.
+2022-03-28 13:35:44,884 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,885 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,885 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,885 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,885 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:44,890 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
+2022-03-28 13:35:44,890 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,890 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,890 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,890 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,890 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,890 - py2neo.client.http - DEBUG - POST '/db/data/transaction/15' 'CREATE INDEX ON :SKILL(conceptUri)' {}
+2022-03-28 13:35:44,903 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/15 HTTP/1.1" 200 866
+2022-03-28 13:35:44,903 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,904 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,904 - py2neo.client.http - DEBUG - POST '/db/data/transaction/15/commit' None None
+2022-03-28 13:35:44,976 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/15/commit HTTP/1.1" 200 89
+2022-03-28 13:35:44,976 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,978 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:44,978 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,978 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:44,978 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:44,978 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:45,007 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1471
+2022-03-28 13:35:45,007 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,008 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,008 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,008 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,008 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,008 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,008 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,008 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,008 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,009 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,010 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,011 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,011 - root - INFO - Index ('conceptUri',) created on SKILL.
+2022-03-28 13:35:45,012 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,012 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,012 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,012 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,013 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:45,025 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1471
+2022-03-28 13:35:45,026 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,026 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,026 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,026 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,026 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,026 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,026 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,026 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,026 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:45,027 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,028 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,029 - root - INFO - Index ('occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description') is missing on OCCUPATION. Creating index.
+2022-03-28 13:35:45,029 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,029 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,029 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,029 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,029 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:45,035 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
+2022-03-28 13:35:45,035 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,036 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,036 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,036 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,036 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,036 - py2neo.client.http - DEBUG - POST '/db/data/transaction/18' 'CREATE INDEX ON :OCCUPATION(occupation_id, conceptUri, iscoGroup, preferredLabel, description)' {}
+2022-03-28 13:35:45,075 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/18 HTTP/1.1" 200 866
+2022-03-28 13:35:45,075 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,075 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,075 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,075 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,076 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,076 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,076 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,076 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,076 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,076 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,076 - py2neo.client.http - DEBUG - POST '/db/data/transaction/18/commit' None None
+2022-03-28 13:35:45,153 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/18/commit HTTP/1.1" 200 89
+2022-03-28 13:35:45,154 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,154 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,154 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,155 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,155 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,155 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:45,220 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1650
+2022-03-28 13:35:45,220 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,220 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,221 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,221 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,221 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,221 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,221 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,221 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,221 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:45,221 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,221 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description']
+2022-03-28 13:35:45,222 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'iscoGroup'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'preferredLabel'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:45,223 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,224 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,224 - root - INFO - Index ('occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description') created on OCCUPATION.
+2022-03-28 13:35:45,224 - root - INFO - Index ('occupation_id',) is missing on OCCUPATION. Creating index.
+2022-03-28 13:35:45,225 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,225 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,225 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,225 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,225 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:45,232 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
+2022-03-28 13:35:45,232 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,233 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,233 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,233 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,234 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,234 - py2neo.client.http - DEBUG - POST '/db/data/transaction/20' 'CREATE INDEX ON :OCCUPATION(occupation_id)' {}
+2022-03-28 13:35:45,248 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/20 HTTP/1.1" 200 866
+2022-03-28 13:35:45,249 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,250 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,250 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,250 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,250 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,250 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,251 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,251 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,251 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,251 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,251 - py2neo.client.http - DEBUG - POST '/db/data/transaction/20/commit' None None
+2022-03-28 13:35:45,362 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/20/commit HTTP/1.1" 200 89
+2022-03-28 13:35:45,363 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,363 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,363 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,364 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,364 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,364 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:45,393 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1775
+2022-03-28 13:35:45,394 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,394 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,394 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,394 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,394 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,394 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description']
+2022-03-28 13:35:45,394 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'iscoGroup'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'preferredLabel'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,395 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,396 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
+2022-03-28 13:35:45,396 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,396 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,396 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,396 - root - INFO - Index ('occupation_id',) created on OCCUPATION.
+2022-03-28 13:35:45,396 - root - INFO - Index ('conceptURI',) is missing on OCCUPATION. Creating index.
+2022-03-28 13:35:45,396 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,396 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,396 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,396 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,396 - py2neo.client.http - DEBUG - POST '/db/data/transaction' None None
+2022-03-28 13:35:45,401 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction HTTP/1.1" 201 147
+2022-03-28 13:35:45,401 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,401 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,401 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,401 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,402 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,402 - py2neo.client.http - DEBUG - POST '/db/data/transaction/22' 'CREATE INDEX ON :OCCUPATION(conceptURI)' {}
+2022-03-28 13:35:45,414 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/22 HTTP/1.1" 200 866
+2022-03-28 13:35:45,414 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,414 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,414 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,414 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,414 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,415 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,415 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,415 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,415 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,415 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,415 - py2neo.client.http - DEBUG - POST '/db/data/transaction/22/commit' None None
+2022-03-28 13:35:45,510 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/22/commit HTTP/1.1" 200 89
+2022-03-28 13:35:45,511 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,511 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,511 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,511 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,511 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,511 - py2neo.client.http - DEBUG - POST '/db/data/transaction/commit' 'CALL db.indexes' {}
+2022-03-28 13:35:45,540 - urllib3.connectionpool - DEBUG - http://localhost:7474 "POST /db/data/transaction/commit HTTP/1.1" 200 1897
+2022-03-28 13:35:45,540 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,540 - py2neo.client - DEBUG - Attempting to acquire read-write connection to default database
+2022-03-28 13:35:45,541 - py2neo.client - DEBUG - Using connection pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,541 - py2neo.client - DEBUG - Trying to acquire connection from pool <py2neo.client.ConnectionPool object at 0x0000020FAB654C10>
+2022-03-28 13:35:45,541 - py2neo.client - DEBUG - Connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> acquired by thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,541 - py2neo.client - DEBUG - Releasing connection <py2neo.client.http.HTTP object at 0x0000020FAB6C74C0> from thread <_MainThread(MainThread, started 15392)>
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object ['skill_id', 'conceptUri', 'reuseLevel', 'skillType', 'preferred_label', 'description']
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'reuseLevel'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'skillType'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'preferred_label'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id', 'conceptUri', 'iscoGroup', 'preferredLabel', 'description']
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'iscoGroup'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'preferredLabel'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'description'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object ['occupation_id']
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object 'occupation_id'
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,541 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['OCCUPATION']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'OCCUPATION'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['conceptURI']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'conceptURI'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['skill_id']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'skill_id'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['PROFILE']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'PROFILE'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['ID']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE_TYPE']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE_TYPE'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['experience_type']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['EXPERIENCE']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'EXPERIENCE'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['ID', 'exp_id', 'experience_type']
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'ID'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'exp_id'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object 'experience_type'
+2022-03-28 13:35:45,542 - py2neo.client.json - DEBUG - Hydrating object ['SKILL']
+2022-03-28 13:35:45,543 - py2neo.client.json - DEBUG - Hydrating object 'SKILL'
+2022-03-28 13:35:45,543 - py2neo.client.json - DEBUG - Hydrating object ['conceptUri']
+2022-03-28 13:35:45,543 - py2neo.client.json - DEBUG - Hydrating object 'conceptUri'
+2022-03-28 13:35:45,543 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,543 - py2neo.client.json - DEBUG - Hydrating object []
+2022-03-28 13:35:45,543 - root - INFO - Index ('conceptURI',) created on OCCUPATION.

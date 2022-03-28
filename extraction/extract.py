@@ -35,6 +35,9 @@ def extract_experiences(df):
     df = df.explode('experience_description')
     df.drop(['Resume_str', 'Resume_html'], axis=1, inplace=True)
     df.dropna(inplace=True)
+    df.reset_index(inplace=True, drop=True)
+    df.reset_index(inplace=True)
+    df.rename(columns={'index':'ind'}, inplace=True)
 
     return df
 
