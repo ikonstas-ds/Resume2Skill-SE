@@ -1,0 +1,430 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="800"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     style="display: block;" class="colored nvd3-svg"
+     contentStyleType="text/css" height="600"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.0">
+    <style type="text/css" xml:space="preserve">.nvd3 .nv-axis line, .nvd3 .nv-axis path { fill: none; shape-rendering: crispedges; }
+.nv-brush .extent, .nvd3 .background path, .nvd3 .nv-axis line, .nvd3 .nv-axis path { shape-rendering: crispedges; }
+.nv-distx, .nv-disty, .nv-noninteractive, .nvd3 .nv-axis, .nvd3.nv-pie .nv-label, .nvd3.nv-sparklineplus g.nv-hoverValue { pointer-events: none; }
+.nvd3 .nv-axis { opacity: 1; }
+.nvd3 .nv-axis path { stroke: rgb(0, 0, 0); stroke-opacity: 0.75; }
+.nvd3 .nv-axis path.domain { stroke-opacity: 0.75; }
+.nvd3 .nv-axis.nv-x path.domain { stroke-opacity: 0; }
+.nvd3 .nv-axis line { stroke: rgb(229, 229, 229); }
+.nvd3 .nv-axis .zero line, .nvd3 .nv-axis line.zero { stroke-opacity: 0.75; }
+.nvd3 .nv-axis .nv-axisMaxMin text { font-weight: 700; }
+.nvd3 .nv-discretebar .nv-groups rect, .nvd3 .nv-multibar .nv-groups rect, .nvd3 .nv-multibarHorizontal .nv-groups rect { stroke-opacity: 0; transition: fill-opacity 250ms linear 0s; }
+.nvd3 .nv-discretebar .nv-groups text, .nvd3 .nv-multibarHorizontal .nv-groups text { font-weight: 700; fill: rgb(0, 0, 0); stroke: none; }
+.nvd3 text { font: 400 12px Arial, sans-serif; }
+.nvd3 .nv-legend .nv-series { cursor: pointer; }</style><style type="text/css"
+           xml:space="preserve">.knime-label, .knime-axis-label, .knime-tick-label, .knime-label text, text.knime-axis-label, text.knime-tick-label { color: black; fill: black; font-size: 12px; }
+.knime-legend-label, text.knime-legend-label { color: black; fill: black; font-size: 12px; font-weight: normal; }</style><style type="text/css"
+           xml:space="preserve">svg.colored .nvd3 .nv-multibar .nv-groups rect, svg.colored .nvd3 .nv-multibarHorizontal .nv-groups rect, svg.colored .nvd3 .nv-discretebar .nv-groups rect { fill: inherit !important; stroke: inherit !important; }</style><g class="nvd3 nv-wrap nv-multiBarHorizontalChart"
+       transform="translate(241.078125,40)">
+        <g>
+            <g class="nv-x nv-axis nvd3-svg knime-axis knime-x">
+                <g class="nvd3 nv-wrap nv-axis knime-axis">
+                    <g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,18.13975155279503)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula1
+                                <title class="knime-tooltip">
+                                    top10 - formula1
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,51.12111801242236)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula2
+                                <title class="knime-tooltip">
+                                    top10 - formula2
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,84.10248447204967)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula3
+                                <title class="knime-tooltip">
+                                    top10 - formula3
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,117.08385093167699)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula4
+                                <title class="knime-tooltip">
+                                    top10 - formula4
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,150.06521739130432)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula1 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top10 - formula1 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,183.04658385093165)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula2 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top10 - formula2 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,216.02795031055896)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula3 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top10 - formula3 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,249.00931677018627)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top10 - formula4 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top10 - formula4 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,281.99068322981367)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula1
+                                <title class="knime-tooltip">
+                                    top5 - formula1
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,314.972049689441)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula2
+                                <title class="knime-tooltip">
+                                    top5 - formula2
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,347.95341614906835)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula3
+                                <title class="knime-tooltip">
+                                    top5 - formula3
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,380.9347826086956)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula4
+                                <title class="knime-tooltip">
+                                    top5 - formula4
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,413.91614906832297)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula1 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top5 - formula1 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,446.8975155279503)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula2 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top5 - formula2 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,479.8788819875776)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula3 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top5 - formula3 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,512.8602484472049)">
+                            <line class="knime-tick-line" y2="0" x2="554.721875"/>
+                            <text x="-15" dy=".32em" y="0"
+                                  style="text-anchor: end; pointer-events: all;"
+                                  class="knime-tick-label">
+                                top5 - formula4 - no - cross - sector
+                                <title class="knime-tooltip">
+                                    top5 - formula4 - no - cross - sector
+                                </title>
+                            </text>
+                        </g>
+                        <path class="domain knime-axis-line" d="M0,0H0V531H0"/>
+                        <text x="-249.0093167701863" y="-236.078125"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="nv-axislabel knime-axis-label"
+                              transform="rotate(-90)">
+                            <title class="knime-tooltip"/>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-y nv-axis nvd3-svg knime-axis knime-y"
+               transform="translate(0,531)">
+                <g class="nv-zeroLine">
+                    <line y2="-531" x1="0" x2="0" y1="0"/>
+                </g>
+                <g class="nvd3 nv-wrap nv-axis knime-axis">
+                    <g>
+                        <g class="tick zero knime-tick" style="opacity: 1;"
+                           transform="translate(0,0)">
+                            <line y2="-531" class="knime-tick-line" x2="0"/>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(168.09753787878788,0)">
+                            <line y2="-531" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                1
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(336.19507575757575,0)">
+                            <line y2="-531" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                2
+                            </text>
+                        </g>
+                        <g class="tick knime-tick" style="opacity: 1;"
+                           transform="translate(504.2926136363636,0)">
+                            <line y2="-531" class="knime-tick-line" x2="0"/>
+                            <text x="0" dy=".71em" y="3"
+                                  style="text-anchor: middle; pointer-events: all;"
+                                  class="knime-tick-label"
+                                  transform="translate(0,0)">
+                                3
+                            </text>
+                        </g>
+                        <path class="domain knime-axis-line"
+                              d="M0,0V0H554.721875V0"/>
+                        <text x="277.3609375" y="30"
+                              style="pointer-events: all;"
+                              class="nv-axislabel knime-axis-label"
+                              text-anchor="middle">
+                            <title class="knime-tooltip"/>
+                        </text>
+                    </g>
+                    <g class="nv-axisMaxMin nv-axisMaxMin-x nv-axisMin-x knime-axis-max-min"
+                       transform="translate(0,0)">
+                        <text dy=".71em" y="3"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="knime-tick-label" transform="">
+                            0
+                        </text>
+                    </g>
+                    <g class="nv-axisMaxMin nv-axisMaxMin-x nv-axisMax-x knime-axis-max-min"
+                       transform="translate(554.721875,0)">
+                        <text dy=".71em" y="3"
+                              style="text-anchor: middle; pointer-events: all;"
+                              class="knime-tick-label" transform="">
+                            3.3
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-barsWrap nvd3-svg">
+                <g class="nvd3 nv-wrap nv-multibarHorizontal"
+                   transform="translate(0,0)">
+                    <defs/>
+                    <g>
+                        <g class="nv-groups">
+                            <g class="nv-group nv-series-0"
+                               style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
+                                <g class="nv-bar positive"
+                                   transform="translate(0,3.2981366459627326)">
+                                    <rect width="444.6584051918963"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,36.27950310559006)">
+                                    <rect width="441.4471817544407"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,69.26086956521738)">
+                                    <rect width="520.94269019036"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,102.2422360248447)">
+                                    <rect width="543.988785762177"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,135.22360248447202)">
+                                    <rect width="421.4307743908992"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,168.20496894409936)">
+                                    <rect width="418.69185900559506"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,201.18633540372667)">
+                                    <rect width="486.52977455405187"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,234.16770186335398)">
+                                    <rect width="502.4121131258859"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,267.14906832298135)">
+                                    <rect width="354.27897731940544"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,300.1304347826087)">
+                                    <rect width="350.8925363405926"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,333.111801242236)">
+                                    <rect width="412.65676677850956"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,366.0931677018633)">
+                                    <rect width="426.6173384301648"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,399.07453416149065)">
+                                    <rect width="353.4434024921188"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,432.055900621118)">
+                                    <rect width="349.1855351533351"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,465.03726708074527)">
+                                    <rect width="398.9715975480197"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                                <g class="nv-bar positive"
+                                   transform="translate(0,498.0186335403726)">
+                                    <rect width="412.9107598209219"
+                                          height="29.683229813664592"/>
+                                    <text/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-legendWrap nvd3-svg knime-legend"
+               transform="translate(0,-40)">
+                <g class="nvd3 nv-legend" transform="translate(0,10)">
+                    <g transform="translate(488.05195312499995,10)">
+                        <g class="nv-series" transform="translate(0,5)">
+                            <circle class="nv-legend-symbol knime-legend-symbol"
+                                    r="5"
+                                    style="stroke-width: 2; fill: rgb(31, 119, 180); fill-opacity: 1; stroke: rgb(31, 119, 180);"/>
+                            <text dx="8" fill="#000" dy=".32em"
+                                  class="nv-legend-text knime-legend-label"
+                                  text-anchor="start">
+                                ADCG
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="nv-controlsWrap"/>
+        </g>
+    </g>
+</svg>
