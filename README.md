@@ -1,10 +1,5 @@
 # Resume2Skill-SE
 
-# EPSO DATA LOAD
-
-A collection of scripts to extract data from the MySql database created for the EPSO Talent Search prototype and load it 
-into a Neo4J graph database.
-
 -----
 ### Environment and installation
 
